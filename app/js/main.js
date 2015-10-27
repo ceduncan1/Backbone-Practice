@@ -26,7 +26,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 function CarTemplate(data) {
-  return "\n    <li>" + data.Owner + " drives a " + data.Color + " " + data.Year + " " + data.Make + " " + data.Model + " named " + data.Name + "</li>\n    ";
+  return "\n    <li>" + data.Owner + " drives a " + data.Color + " " + data.Year + " " + data.Make + " " + data.Model + " named " + data.Name + ".<br><img class='carImg' src='" + data.ImgSrc + "'><br></li>\n    ";
 }
 
 exports["default"] = CarTemplate;
@@ -108,7 +108,7 @@ function renderCars() {
     var $li = (0, _jquery2['default'])(templateString);
     $ul.append($li);
   });
-  (0, _jquery2['default'])('body').html($ul);
+  (0, _jquery2['default'])('.repCont').html($ul);
 }
 
 cars.fetch().then(renderCars);

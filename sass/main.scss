@@ -2,5 +2,16 @@
 @import "font-awesome";
 
 body {
-  background: #e2ebf3;
+  padding: 20px;
+  background: #c9ddff;
+  color: #133670;
+
+  li {
+    list-style-type: none;
+
+    img {
+      max-width: 150px;
+      padding-bottom: 20px;
+    }
+  }
 }

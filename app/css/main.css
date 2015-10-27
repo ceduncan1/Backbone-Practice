@@ -2019,6 +2019,13 @@
   content: ""; }
 
 body {
-  background: #e2ebf3; }
+  padding: 20px;
+  background: #c9ddff;
+  color: #133670; }
+  body li {
+    list-style-type: none; }
+    body li img {
+      max-width: 150px;
+      padding-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */

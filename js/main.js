@@ -24,7 +24,7 @@ function renderCars() {
     let $li = $(templateString);
     $ul.append($li);
   });
-  $('body').html($ul);
+  $('.repCont').html($ul);
 }
 
 cars.fetch().then(renderCars);
